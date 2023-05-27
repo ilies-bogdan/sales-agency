@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="655.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+    <children>
+        <TableView fx:id="tableViewProducts" layoutX="41.0" layoutY="86.0" prefHeight="478.0" prefWidth="682.0">
+            <columns>
+                <TableColumn fx:id="tableColumnProduct" prefWidth="337.6000175476074" text="Product" />
+                <TableColumn fx:id="tableColumnPrice" prefWidth="157.5999755859375" text="Price" />
+                <TableColumn fx:id="tableColumnAvailableQuantity" prefWidth="187.2000732421875" text="Quantity" />
+            </columns>
+        </TableView>
+        <TextField fx:id="textFieldSearch" layoutX="41.0" layoutY="43.0" promptText="Search..." />
+        <Button layoutX="115.0" layoutY="591.0" mnemonicParsing="false" onAction="#handleUpdateRequest" prefHeight="26.0" prefWidth="150.0" text="Update product" />
+        <Button layoutX="476.0" layoutY="591.0" mnemonicParsing="false" onAction="#handleAddRequest" prefHeight="26.0" prefWidth="150.0" text="Add new product" />
+    </children>
+</AnchorPane>
